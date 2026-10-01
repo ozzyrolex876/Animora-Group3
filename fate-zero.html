@@ -6,6 +6,40 @@
   <title>FATE/ZERO — ANIMORA</title>
   <meta name="description" content="The Fourth Holy Grail War brings seven magi together, each summoning a legendary Servant to fight for the chance to have their deepest wish granted.">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Image frame wrapper to keep original layout while filling space */
+    .img-wrapper {
+      position: relative;
+      width: 100%;
+      height: 250px; /* Adjust height if needed */
+      overflow: hidden;
+      background-color: #111;
+      border-radius: 8px;
+    }
+    
+    /* Blurred background image fills 100% of the box */
+    .img-wrapper .bg-blur {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover !important;
+      filter: blur(12px) brightness(0.5);
+      transform: scale(1.1); /* Prevents white blur edges */
+      z-index: 1;
+    }
+
+    /* Main image in front is centered and NEVER cut off */
+    .img-wrapper .main-img {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      object-fit: contain !important;
+      object-position: center !important;
+      z-index: 2;
+    }
+  </style>
 </head>
 <body class="fandom-page fate-zero" style="--accent:#d84b63;--accent2:#d8b86a;--hero-image:url('assets/backgrounds/fate-zero.jpg')">
 
@@ -79,38 +113,61 @@
 
       <div class="character-grid">
         <article class="character reveal">
-          <img class="character-image" src="assets/characters/fate-zero-1.jpg" alt="Fate Zero character artwork [1]" loading="lazy">
-        <div class="initials">KE</div>
+          <div class="img-wrapper">
+            <img class="bg-blur" src="https://practicaltyping.com/wp-content/uploads/2020/02/KiritsuguEmiya.png" alt="" aria-hidden="true">
+            <img class="character-image main-img" src="https://practicaltyping.com/wp-content/uploads/2020/02/KiritsuguEmiya.png" alt="Fate Zero character artwork [1]" loading="lazy">
+          </div>
+          <div class="initials">KE</div>
           <h3>Kiritsugu Emiya</h3>
           <p>A pragmatic magus hired to fight for the Einzbern family.</p>
         </article>
+
         <article class="character reveal">
-          <img class="character-image" src="assets/characters/fate-zero-2.jpg" alt="Fate Zero character artwork [2]" loading="lazy">
-        <div class="initials">AS</div>
+          <div class="img-wrapper">
+            <img class="bg-blur" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE5tM_1CTQ7x7WI9mFA7wzZvrcFTsdjeW3PZX3EzkXbQ&s=10" alt="" aria-hidden="true">
+            <img class="character-image main-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE5tM_1CTQ7x7WI9mFA7wzZvrcFTsdjeW3PZX3EzkXbQ&s=10" alt="Fate Zero character artwork [2]" loading="lazy">
+          </div>
+          <div class="initials">AS</div>
           <h3>Artoria Pendragon</h3>
           <p>The legendary King of Knights summoned as Saber.</p>
         </article>
+
         <article class="character reveal">
-          <img class="character-image" src="assets/characters/fate-zero-3.jpg" alt="Fate Zero character artwork [3]" loading="lazy">
-        <div class="initials">GI</div>
+          <div class="img-wrapper">
+            <img class="bg-blur" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgpYZeuT_I_5vSFcwELOvfv80bTm24QT0YSvZ8NBcySg&s=10" alt="" aria-hidden="true">
+            <img class="character-image main-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgpYZeuT_I_5vSFcwELOvfv80bTm24QT0YSvZ8NBcySg&s=10" alt="Fate Zero character artwork [3]" loading="lazy">
+          </div>
+          <div class="initials">GI</div>
           <h3>Gilgamesh</h3>
           <p>The proud King of Heroes and Archer-class Servant.</p>
         </article>
+
         <article class="character reveal">
-          <img class="character-image" src="assets/characters/fate-zero-4.jpg" alt="Fate Zero character artwork [4]" loading="lazy">
-        <div class="initials">WI</div>
+          <div class="img-wrapper">
+            <img class="bg-blur" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1AhiiZYQBAa57RV7G0yOvqOlNXtScdbDPvaehPFAdkV5r8qTI_vPo8KSh&s=10" alt="" aria-hidden="true">
+            <img class="character-image main-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1AhiiZYQBAa57RV7G0yOvqOlNXtScdbDPvaehPFAdkV5r8qTI_vPo8KSh&s=10" alt="Fate Zero character artwork [4]" loading="lazy">
+          </div>
+          <div class="initials">WI</div>
           <h3>Waver Velvet</h3>
           <p>A young magus who enters the war as Rider's Master.</p>
         </article>
+
         <article class="character reveal">
-          <img class="character-image" src="assets/characters/fate-zero-5.jpg" alt="Fate Zero character artwork [5]" loading="lazy">
-        <div class="initials">IS</div>
+          <div class="img-wrapper">
+            <img class="bg-blur" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu_DH_tHcHPCugsIQI7gSYan7QByqlATgI0luZX9134g&s=10" alt="" aria-hidden="true">
+            <img class="character-image main-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu_DH_tHcHPCugsIQI7gSYan7QByqlATgI0luZX9134g&s=10" alt="Fate Zero character artwork [5]" loading="lazy">
+          </div>
+          <div class="initials">IS</div>
           <h3>Iskandar</h3>
           <p>The charismatic King of Conquerors and Waver's Servant.</p>
         </article>
+
         <article class="character reveal">
-          <img class="character-image" src="assets/characters/fate-zero-6.jpg" alt="Fate Zero character artwork [6]" loading="lazy">
-        <div class="initials">KT</div>
+          <div class="img-wrapper">
+            <img class="bg-blur" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU0K6zFQjPw4taslv1m4cjOiFVMyBlxEiulcbULtM8JA&s=10" alt="" aria-hidden="true">
+            <img class="character-image main-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU0K6zFQjPw4taslv1m4cjOiFVMyBlxEiulcbULtM8JA&s=10" alt="Fate Zero character artwork [6]" loading="lazy">
+          </div>
+          <div class="initials">KT</div>
           <h3>Kirei Kotomine</h3>
           <p>A priest whose role in the war becomes increasingly important.</p>
         </article>
@@ -163,15 +220,27 @@
 
       <div class="media-grid">
         <figure class="media-card reveal">
-          <div class="media-art"><img src="assets/media/fate-zero-feature.jpg" alt="Fate Zero anime artwork" loading="lazy"><span>GRAIL</span></div>
+          <div class="media-art img-wrapper">
+            <img class="bg-blur" src="assets/media/fate-zero-feature.jpg" alt="" aria-hidden="true">
+            <img class="main-img" src="assets/media/fate-zero-feature.jpg" alt="Fate Zero anime artwork" loading="lazy">
+            <span>GRAIL</span>
+          </div>
           <figcaption>Holy Grail War</figcaption>
         </figure>
         <figure class="media-card reveal">
-          <div class="media-art"><img src="assets/media/fate-zero-feature.jpg" alt="Fate Zero anime artwork" loading="lazy"><span>SABER</span></div>
+          <div class="media-art img-wrapper">
+            <img class="bg-blur" src="assets/media/fate-zero-feature.jpg" alt="" aria-hidden="true">
+            <img class="main-img" src="assets/media/fate-zero-feature.jpg" alt="Fate Zero anime artwork" loading="lazy">
+            <span>SABER</span>
+          </div>
           <figcaption>Servants</figcaption>
         </figure>
         <figure class="media-card reveal">
-          <div class="media-art"><img src="assets/media/fate-zero-feature.jpg" alt="Fate Zero anime artwork" loading="lazy"><span>WAR</span></div>
+          <div class="media-art img-wrapper">
+            <img class="bg-blur" src="assets/media/fate-zero-feature.jpg" alt="" aria-hidden="true">
+            <img class="main-img" src="assets/media/fate-zero-feature.jpg" alt="Fate Zero anime artwork" loading="lazy">
+            <span>WAR</span>
+          </div>
           <figcaption>The Fourth War</figcaption>
         </figure>
       </div>
